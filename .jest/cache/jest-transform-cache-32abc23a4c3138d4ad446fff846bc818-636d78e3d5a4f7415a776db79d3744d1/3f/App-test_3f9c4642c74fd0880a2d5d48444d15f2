@@ -1,0 +1,11 @@
+06eb931705d73312af51dbbc16cf516d
+"use strict";
+var _react = babelHelpers.interopRequireDefault(require("react"));
+var _app = babelHelpers.interopRequireDefault(require("../app"));
+
+var _reactTestRenderer = babelHelpers.interopRequireDefault(require("react-test-renderer"));var _jsxFileName = "C:\\Development\\njapplications\\wuwin\\__tests__\\App-test.js";
+
+test('renders correctly', function () {
+  var tree = _reactTestRenderer.default.create(_react.default.createElement(_app.default, { __source: { fileName: _jsxFileName, lineNumber: 8 } })).toJSON();
+  expect(tree).toMatchSnapshot();
+});

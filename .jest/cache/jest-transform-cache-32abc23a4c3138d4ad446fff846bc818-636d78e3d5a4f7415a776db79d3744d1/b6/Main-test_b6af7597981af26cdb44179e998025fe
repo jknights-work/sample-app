@@ -1,0 +1,29 @@
+7a7464105b81a2f240df35fcf53625ea
+"use strict";
+var _react = babelHelpers.interopRequireDefault(require("react"));
+var _main = babelHelpers.interopRequireDefault(require("../main.component"));
+
+
+var _enzyme = require("enzyme");var _jsxFileName = "C:\\Development\\njapplications\\wuwin\\src\\main\\__tests__\\Main-test.js";
+
+
+
+
+require('enzyme').configure({ adapter: new (require('enzyme-adapter-react-16'))() });
+
+
+describe('Main Component', function () {
+  var wrapper;
+
+  var mockMainfn = jest.fn();
+  var mockLocationfn = jest.fn();
+  beforeEach(function () {
+
+    wrapper = (0, _enzyme.shallow)(_react.default.createElement(_main.default, { store: mockMainfn, location: mockLocationfn, __source: { fileName: _jsxFileName, lineNumber: 21 } }));
+  });
+
+
+  wrapper.isRunning();
+
+  expect(wrapper.state.isRunning).toEqual(false);
+});
